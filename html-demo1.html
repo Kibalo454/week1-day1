@@ -1,106 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Demo 1</title>
-    <style>
-        /* Header styling */
-        header {
-            background: url('your-image-url.jpg') no-repeat 0 -200px;
-            background-size: cover;
-            height: 200px;
-        }
-        
-        /* Site name styling */
-        header h1 {
-            font-size: 36px;
-            color: #fff;
-            font-weight: bold;
-            font-family: Arial, sans-serif;
-            padding: 30px 0 0 20px;
-        }
-        
-        /* Navigation styling */
-        nav {
-            background-color: rgb(50, 50, 50);
-            text-align: center;
-            padding-top: 15px;
-        }
-        
-        nav ul li {
-            list-style-type: none;
-            display: inline-block;
-        }
-        
-        nav ul li a {
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-        
-        nav ul li a:link {
-            color: #fff;
-        }
-        
-        nav ul li a:visited {
-            color: #ccc;
-        }
-        
-        nav ul li a:hover {
-            color: #ff9900;
-        }
-        
-        nav ul li a:active {
-            color: #ff0000;
-        }
-        
-        /* Main content styling */
-        main {
-            height: 400px;
-        }
-        
-        main h2 {
-            color: #333;
-            font-family: Georgia, serif;
-        }
-        
-        /* Footer styling */
-        footer {
-            height: 100px;
-            background-color: #333;
-            text-align: center;
-            padding-top: 40px;
-            color: #ccc;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>My Web Site</title>
+  <style>
+    /* 2.1  Select the entire header box */
+    header {
+      /* Background shorthand:  image  repeat  position-x  position-y  */
+      background: url("central_park.jpg") no-repeat 0 -200px;
+      background-size: cover;     /* scale image so header is filled */
+      height: 200px;              /* fixed hero height             */
+
+      /* Make the brand text pop */
+      color: #fff;                /* white letters                 */
+      font-size: 24px;            /* bigger                        */
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      padding: 20px;              /* push text away from edges     */
+    }
+  </style>
 </head>
 <body>
-    <div id="container">
-        <!-- Header section -->
-        <header>
-            <h1>My Web Site Brand</h1>
-        </header>
-        
-        <!-- Navigation section -->
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <!-- Main content section -->
-        <main>
-            <h2>My First Heading</h2>
-            <p>My First paragraph</p>
-        </main>
-        
-        <!-- Footer section -->
-        <footer>
-            <p>&copy; 2020</p>
-        </footer>
-    </div>
+
+  <header>My Web Site Brand</header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </main>
+
+  <footer>© Copyright 2020</footer>
+
 </body>
 </html>
