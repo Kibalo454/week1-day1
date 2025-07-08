@@ -4,19 +4,62 @@
   <meta charset="UTF-8">
   <title>My Web Site</title>
   <style>
-    /* 2.1  Select the entire header box */
+    /* Header styles */
     header {
-      /* Background shorthand:  image  repeat  position-x  position-y  */
       background: url("central_park.jpg") no-repeat 0 -200px;
-      background-size: cover;     /* scale image so header is filled */
-      height: 200px;              /* fixed hero height             */
-
-      /* Make the brand text pop */
-      color: #fff;                /* white letters                 */
-      font-size: 24px;            /* bigger                        */
+      background-size: cover;
+      height: 200px;
+      color: #fff;
+      font-size: 24px;
       font-weight: bold;
       font-family: Arial, sans-serif;
-      padding: 20px;              /* push text away from edges     */
+      padding: 20px;
+    }
+
+    /* Navigation bar styles */
+    nav li {
+      list-style-type: none;
+      display: inline;
+    }
+
+    nav a:link,
+    nav a:visited {
+      color: #000;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      color: #666;
+    }
+
+    nav a:active {
+      color: #333;
+    }
+
+    nav {
+      background-color: rgb(200, 200, 200);
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    /* Main area styles */
+    main h1 {
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      height: 300px;
+    }
+
+    /* Footer styles */
+    footer {
+      height: 60px;
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding-top: 20px;
     }
   </style>
 </head>
