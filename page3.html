@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Page 3 - Signup Form</title>
+  <title>Page 3 - Contact Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -17,40 +18,35 @@
   </nav>
 
   <main>
-    <h1>Signup Form</h1>
-    <form action="#" method="post">
+    <h1>Contact Us</h1>
+
+    <form action="/signup" method="post">
       <fieldset>
-        <legend>Register</legend>
+        <legend>User Personal Information</legend>
 
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
+        <label>Enter your full name</label>
+        <input type="text" name="name">
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
+        <label>Enter your email</label>
+        <input type="email" name="email">
 
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone"><br>
+        <label>Enter your phone</label>
+        <input type="text" name="phone">
 
-        <br>
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
+        <label>Select your gender</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
 
-        <br>
-        <label for="contact">Preferred Contact Method:</label><br>
-        <select id="contact" name="contact">
-          <option value="email">Email</option>
-          <option value="phone">Phone</option>
-          <option value="text">Text</option>
-        </select><br>
+        <label>How should we contact you?</label>
+        <select>
+          <option>Email</option>
+          <option>Phone</option>
+        </select>
 
-        <br>
-        <label for="comments">Comments:</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+        <label>Tell us the reason for your visit today:</label>
+        <textarea rows="5" cols="30"></textarea>
 
-        <button type="submit">Sign Up</button>
+        <input type="submit" value="Sign-Up">
       </fieldset>
     </form>
   </main>

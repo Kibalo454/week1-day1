@@ -27,3 +27,48 @@ nav ul li a {
 main {
   padding: 30px;
 }
+
+table, caption, th, td {
+  border: 1px solid #000;
+}
+
+table {
+  margin: 30px auto;
+}
+
+th, td {
+  width: 150px;
+  height: 35px;
+  text-align: center;
+}
+
+caption {
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 40px;
+  padding-top: 15px;
+  color: #753a30;
+}
+
+label {
+  display: block;
+  margin: 15px 0 0 0;
+}
+
+input {
+  width: 300px;
+}
+
+input[type="radio"] {
+  width: 25px;
+}
+
+textarea {
+  width: 300px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 20px 0 10px 0;
+  width: 100px;
+}
