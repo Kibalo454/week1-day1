@@ -2,27 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Page 3 - Contact Form</title>
+  <title>Contact - My Web Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>My Web Site Brand</header>
+  <header>
+    <div class="header-banner">
+      <img src="central_park.jpg" alt="Central Park">
+      <h1>My Web Site Brand</h1>
+    </div>
+  </header>
 
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="page2.html">Table</a></li>
+      <li><a href="page2.html">Gallery</a></li>
       <li><a href="page3.html">Contact</a></li>
     </ul>
   </nav>
 
   <main>
-    <h1>Contact Us</h1>
+    <h2>My Third Heading</h2>
+    <p>My Third paragraph.</p>
 
     <form action="/signup" method="post">
       <fieldset>
-        <legend>User Personal Information</legend>
+        <legend>User personal information</legend>
 
         <label>Enter your full name</label>
         <input type="text" name="name">
@@ -43,7 +49,7 @@
           <option>Phone</option>
         </select>
 
-        <label>Tell us the reason for your visit today:</label>
+        <label>Tell us the reason of your visit today:</label>
         <textarea rows="5" cols="30"></textarea>
 
         <input type="submit" value="Sign-Up">
@@ -51,7 +57,9 @@
     </form>
   </main>
 
-  <footer>© Copyright 2020</footer>
+  <footer>
+    <p>&copy; Copyright 2020</p>
+  </footer>
 
 </body>
 </html>
