@@ -24,35 +24,35 @@
   </nav>
 
   <main>
-   <main>
-  <h2>My Fourth Heading</h2>
-  <p>My Fourth Paragraph.</p>
+    <h2>My Fourth Heading</h2>
+    <p>My Fourth Paragraph.</p>
 
-  <ul id="album">
-    <li id="photo">
-      <img src="images/winterland1.jpg" width="320" height="224" alt="Winterland 1">
-    </li>
-    <li id="photo">
-      <img src="images/Winterland6.jpg" width="320" height="224" alt="Winterland 2">
-    </li>
-    <li id="photo">
-      <img src="images/Winterland3.jpg" width="320" height="224" alt="Winterland 3">
-    </li>
-    <li id="photo">
-      <img src="images/Winterland4.jpg" width="320" height="224" alt="Winterland 4">
-    </li>
-    <li id="photo">
-      <img src="images/Winterland5.jpg" width="320" height="224" alt="Winterland 5">
-    </li>
-    <li id="photo">
-      <img src="images/Winterland6.jpg" width="320" height="224" alt="Winterland 6">
-    </li>
-  </ul>
-</main>
+    <ul id="gallery">
+      <!-- Images will be inserted here by JavaScript -->
+    </ul>
+  </main>
 
   <footer>
     <p>&copy; Copyright 2020</p>
   </footer>
+
+  <script>
+    var photos = [];
+    var fileNames = [];
+    var imageList = [];
+    var image;
+    var openList = "<li>";
+    var closeList = "</li>";
+
+    for (var i = 0; i < 6; i++) {
+      fileNames.push("winterland" + (i + 1));
+      photos.push("<img src='" + fileNames[i] + ".jpg' alt='winterland " + (i + 1) + "'>");
+      image = openList + photos[i] + closeList;
+      imageList.push(image);
+    }
+
+    document.getElementById("gallery").innerHTML = imageList.join("");
+  </script>
 
 </body>
 </html>
